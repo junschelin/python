@@ -10,6 +10,6 @@ class User:
     def greet_user(self):
         print(f"{self.last_name}{self.first_name}님 환영합니다!")
 
-user = User("존", "박")
-user.describe_user()
-user.greet_user()
+# user = User("존", "박")
+# user.describe_user()
+# user.greet_user()

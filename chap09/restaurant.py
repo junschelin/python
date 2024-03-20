@@ -12,15 +12,13 @@ class Restaurant:
         print("opened")
 
 class IceCreamStand(Restaurant):
-    def __init__(self, name, ctype, flavors):
-        super().__init__(name, ctype)
+    
+    def __init__(self, r_name, c_type, flavors):
+        super().__init__(r_name, c_type)
         self.flavors = flavors
 
-    def show_flavors(self):
-        print("맛이 {}".format(self.flavors))
-        print(f"맛이 {self.flavors}")
-    
-
+new_ice = IceCreamStand("베스킨라빈스", "디저트", "체리쥬빌레")
+new_ice.describe_restaurant()
 
 # new_rest = Restaurant('자마미', '등갈비')
 # new_rest.describe_restaurant()
@@ -33,8 +31,3 @@ class IceCreamStand(Restaurant):
 # my_rest1.describe_restaurant()
 # my_rest2.describe_restaurant()
 # my_rest3.describe_restaurant()
-
-ice_cream = IceCreamStand('Italy', 'pizza', '매운맛')
-ice_cream.show_flavors()
-ice_cream.describe_restaurant()
-ice_cream.open_restaurant()
